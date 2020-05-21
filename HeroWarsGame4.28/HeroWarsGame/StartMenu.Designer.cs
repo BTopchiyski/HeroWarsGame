@@ -40,6 +40,7 @@
             // 
             // StartMenu_StartGame
             // 
+            this.StartMenu_StartGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.StartMenu_StartGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StartMenu_StartGame.Image = ((System.Drawing.Image)(resources.GetObject("StartMenu_StartGame.Image")));
             this.StartMenu_StartGame.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -53,6 +54,7 @@
             // 
             // StartMenu_CreateCharacter
             // 
+            this.StartMenu_CreateCharacter.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.StartMenu_CreateCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StartMenu_CreateCharacter.Image = ((System.Drawing.Image)(resources.GetObject("StartMenu_CreateCharacter.Image")));
             this.StartMenu_CreateCharacter.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -68,6 +70,7 @@
             // StarMenu_Quit
             // 
             this.StarMenu_Quit.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.StarMenu_Quit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.StarMenu_Quit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StarMenu_Quit.Image = ((System.Drawing.Image)(resources.GetObject("StarMenu_Quit.Image")));
             this.StarMenu_Quit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -92,6 +95,7 @@
             // 
             // SM_Instr
             // 
+            this.SM_Instr.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SM_Instr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SM_Instr.Image = ((System.Drawing.Image)(resources.GetObject("SM_Instr.Image")));
             this.SM_Instr.ImageAlign = System.Drawing.ContentAlignment.TopCenter;

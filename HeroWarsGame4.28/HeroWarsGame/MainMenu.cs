@@ -103,12 +103,14 @@ namespace HeroWarsGame
                 dmg += 1;
                 MM_Gold.Text = gold.ToString();
                 MM_Dmg.Text = dmg.ToString();
+                
             }
             else
             {
                 MessageBox.Show("Not enough gold!");
             }
             UpdateHeroInfo();
+            save.UpdateSaved();
         }
         private void UpdateHeroInfo()
         {
