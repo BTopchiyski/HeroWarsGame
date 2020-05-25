@@ -13,7 +13,7 @@ namespace HeroWarsGame
 {
     public partial class StartMenu : Form
     {
-        //ako vidish tova znachi raboti;
+        
         private Save save = new Save();
         
         public StartMenu()
