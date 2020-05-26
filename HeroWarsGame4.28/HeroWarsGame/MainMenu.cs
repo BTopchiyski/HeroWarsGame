@@ -12,6 +12,7 @@ namespace HeroWarsGame
 {
     public partial class MainMenu : Form
     {
+        //new
         Save save = new Save();
         public MainMenu()
         {
@@ -96,10 +97,11 @@ namespace HeroWarsGame
         {
             int gold = int.Parse(MM_Gold.Text);
             int dmg = int.Parse(MM_Dmg.Text);
+            int lvl = int.Parse(MM_Level.Text);
 
-            if (gold - 10 >= 0)
+            if (gold - (2 * lvl) >= 0)
             {
-                gold -= 10;
+                gold -= 2 * lvl;
                 dmg += 1;
                 MM_Gold.Text = gold.ToString();
                 MM_Dmg.Text = dmg.ToString();

@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Battle));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Mob1 = new System.Windows.Forms.PictureBox();
             this.Player2 = new System.Windows.Forms.PictureBox();
             this.BigShield = new System.Windows.Forms.PictureBox();
             this.MobShot = new System.Windows.Forms.Panel();
@@ -52,8 +53,8 @@
             this.GoldAmount = new System.Windows.Forms.Label();
             this.Shield = new System.Windows.Forms.PictureBox();
             this.Heal = new System.Windows.Forms.PictureBox();
-            this.Mob1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Mob1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BigShield)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fire2)).BeginInit();
@@ -62,7 +63,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Bomb2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shield)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Heal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Mob1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -90,15 +90,29 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // Mob1
+            // 
+            this.Mob1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Mob1.BackColor = System.Drawing.Color.Lime;
+            this.Mob1.Location = new System.Drawing.Point(857, 209);
+            this.Mob1.Name = "Mob1";
+            this.Mob1.Size = new System.Drawing.Size(39, 62);
+            this.Mob1.TabIndex = 0;
+            this.Mob1.TabStop = false;
+            // 
             // Player2
             // 
             this.Player2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Player2.BackColor = System.Drawing.Color.Red;
-            this.Player2.Location = new System.Drawing.Point(11, 209);
+            this.Player2.BackColor = System.Drawing.Color.Transparent;
+            this.Player2.Image = ((System.Drawing.Image)(resources.GetObject("Player2.Image")));
+            this.Player2.Location = new System.Drawing.Point(3, 209);
             this.Player2.Name = "Player2";
-            this.Player2.Size = new System.Drawing.Size(39, 62);
+            this.Player2.Size = new System.Drawing.Size(47, 62);
+            this.Player2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Player2.TabIndex = 0;
             this.Player2.TabStop = false;
             // 
@@ -295,18 +309,6 @@
             this.Heal.Click += new System.EventHandler(this.Heal_Click);
             this.Heal.MouseHover += new System.EventHandler(this.Heal_MouseHover);
             // 
-            // Mob1
-            // 
-            this.Mob1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Mob1.BackColor = System.Drawing.Color.Lime;
-            this.Mob1.Location = new System.Drawing.Point(857, 209);
-            this.Mob1.Name = "Mob1";
-            this.Mob1.Size = new System.Drawing.Size(39, 62);
-            this.Mob1.TabIndex = 0;
-            this.Mob1.TabStop = false;
-            // 
             // Battle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -334,6 +336,7 @@
             this.Load += new System.EventHandler(this.Battle_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.w);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Mob1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BigShield)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fire2)).EndInit();
@@ -342,7 +345,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Bomb2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shield)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Heal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Mob1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
