@@ -33,16 +33,20 @@ namespace HeroWarsGame
                 if (!CC_NameBox.Text.Any(char.IsDigit) && CC_NameBox.Text != "" && !(CC_NameBox.Text.Length > 18))
                 {
                     bool contains = false;
-
-                    using (StreamReader readNames = File.OpenText(@"D:\\Names.txt"))
+                    if (!File.Exists(@"D:\\Names.txt"))
                     {
-                        while (!readNames.EndOfStream)
-                        {
-                            string line = readNames.ReadLine();
-                            if (CC_NameBox.Text == line)
-                                contains = true;
-                        }
+                        File.Create(@"D:\\Names.txt");
                     }
+                    else
+                        using (StreamReader readNames = File.OpenText(@"D:\\Names.txt"))
+                        {
+                            while (!readNames.EndOfStream)
+                            {
+                                string line = readNames.ReadLine();
+                                if (CC_NameBox.Text == line)
+                                    contains = true;
+                            }
+                        }
                     if (!contains)
                         Name = CC_NameBox.Text;
                     else
@@ -127,9 +131,7 @@ namespace HeroWarsGame
                         sw.WriteLine(SaveContents);
                         sw.Close();
                     }
-
-
-
+                   
                     this.Hide();
                     Saves saves = new Saves();
                     saves.ShowDialog();
