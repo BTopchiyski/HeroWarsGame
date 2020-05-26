@@ -179,5 +179,152 @@
   <ItemGroup>
     <None Include="Resources\lightning21.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoblinArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoblinGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoblinMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrcArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrcGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrcMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrollArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrollGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrollMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Battlefield.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buttons.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartMenu.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

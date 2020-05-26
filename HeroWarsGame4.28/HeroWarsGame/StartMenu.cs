@@ -13,7 +13,7 @@ namespace HeroWarsGame
 {
     public partial class StartMenu : Form
     {
-
+        //NEW!
         private Save save = new Save();
         
         public StartMenu()

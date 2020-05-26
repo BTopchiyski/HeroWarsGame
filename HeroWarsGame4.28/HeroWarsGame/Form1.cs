@@ -20,7 +20,6 @@ namespace HeroWarsGame
         static string PRace;
         static int MobShotSpeed;
         static int PHealth;
-        static string PEnemy;
         static int PAddDmg;
         static int MHealth;
         static int MGold;
@@ -66,9 +65,6 @@ namespace HeroWarsGame
 
             usedShield = false;
             usedHeal = false;
-            //GetHeroInfo
-            //../
-            // UpdateChanges
             
 
             timer1.Start();
@@ -165,7 +161,7 @@ namespace HeroWarsGame
         {
             CallTraps();
 
-            if (MobShot.Left - MobShot.Width / 2 <= Player1.Left + Player1.Width && (MobShot.Top > Player1.Top && MobShot.Top < Player1.Top + Player1.Height))
+            if (MobShot.Left - MobShot.Width / 2 <= Player2.Left + Player2.Width && (MobShot.Top > Player2.Top && MobShot.Top < Player2.Top + Player2.Height))
             {
                 if (!shieldActivated)
                 {
@@ -186,7 +182,7 @@ namespace HeroWarsGame
                     MobShot.Left = Mob1.Left; 
                 }
             } 
-            else if (MobShot.Left < 0 && (MobShot.Top < Player1.Top || MobShot.Top > Player1.Bottom))
+            else if (MobShot.Left < 0 && (MobShot.Top < Player2.Top || MobShot.Top > Player2.Bottom))
             {
                 MobShot.Top = Mob1.Top;
                 MobShot.Left = Mob1.Left;
@@ -324,7 +320,7 @@ namespace HeroWarsGame
         }
         private bool PlayerHits(Point pt)
         {
-            if (pt.X >= Player1.Location.X && pt.X <= Player1.Location.X + Player1.Width && pt.Y >= Player1.Location.Y && pt.Y <= Player1.Location.Y + Player1.Height)
+            if (pt.X >= Player2.Location.X && pt.X <= Player2.Location.X + Player2.Width && pt.Y >= Player2.Location.Y && pt.Y <= Player2.Location.Y + Player2.Height)
             {
                 return true;
             }
@@ -436,8 +432,8 @@ namespace HeroWarsGame
         public void Shoot()
         {
             isCharged = false;
-            PlayerShot.Top = Player1.Top;
-            PlayerShot.Left = Player1.Left + Player1.Width;
+            PlayerShot.Top = Player2.Top;
+            PlayerShot.Left = Player2.Left + Player2.Width;
             Invalidate();
         }
         public void MobMovement()
@@ -476,24 +472,24 @@ namespace HeroWarsGame
         {
             if (e.KeyChar == 'w' || e.KeyChar == 'W')
             {
-                if (Player1.Top < 0 || Player1.Top <= 3)
+                if (Player2.Top < 0 || Player2.Top <= 3)
                 {
-                    Player1.Top = 0;
+                    Player2.Top = 0;
                 }
                 else
                 {
-                    Player1.Top -= 3;
+                    Player2.Top -= 3;
                 }
             }
             if (e.KeyChar == 's' || e.KeyChar == 'S')
             {
-                if (Player1.Bottom > panel1.Height || Player1.Bottom >= panel1.Height - 3)
+                if (Player2.Bottom > panel1.Height || Player2.Bottom >= panel1.Height - 3)
                 {
-                    Player1.Top = panel1.Height - Player1.Height - 3;
+                    Player2.Top = panel1.Height - Player2.Height - 3;
                 }
                 else
                 {
-                    Player1.Top += 3;
+                    Player2.Top += 3;
                 }
             }
             if (e.KeyChar == ' ')
@@ -506,30 +502,30 @@ namespace HeroWarsGame
             }
             if (e.KeyChar == 'd' || e.KeyChar == 'D')
             {
-                if (Player1.Left >= 100)
+                if (Player2.Left >= 100)
                 {
-                    Player1.Left = 100;
+                    Player2.Left = 100;
                 }
                 else
                 {
-                    Player1.Left += 3;
+                    Player2.Left += 3;
                 }
             }
             if (e.KeyChar == 'a' || e.KeyChar == 'A')
             {
-                if (Player1.Left <= 8)
+                if (Player2.Left <= 8)
                 {
-                    Player1.Left = 8;
+                    Player2.Left = 8;
                 }
                 else
                 {
-                    Player1.Left -= 3;
+                    Player2.Left -= 3;
                 }
             }
             if (shieldActivated)
             {
-                BigShield.Top = Player1.Top;
-                BigShield.Left = Player1.Left + Player1.Width + 5;
+                BigShield.Top = Player2.Top;
+                BigShield.Left = Player2.Left + Player2.Width + 5;
 
             }
             if (e.KeyChar == '2' && !usedShield)
@@ -537,8 +533,8 @@ namespace HeroWarsGame
                 if (PGold - 20 >= 0)
                 {
                     PGold -= 20;
-                    BigShield.Left = Player1.Location.X + Player1.Width + 5;
-                    BigShield.Top = Player1.Top;
+                    BigShield.Left = Player2.Location.X + Player2.Width + 5;
+                    BigShield.Top = Player2.Top;
                     shieldActivated = true;
                     BigShield.Visible = true;
                     usedShield = true;
