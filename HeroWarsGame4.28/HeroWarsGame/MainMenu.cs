@@ -87,8 +87,8 @@ namespace HeroWarsGame
             save.UpdateSaved();
 
             this.Hide();
-            StartMenu starmenu = new StartMenu();
-            starmenu.ShowDialog();
+            StartMenu startMenu = new StartMenu();
+            startMenu.ShowDialog();
             this.Close();
 
         }
