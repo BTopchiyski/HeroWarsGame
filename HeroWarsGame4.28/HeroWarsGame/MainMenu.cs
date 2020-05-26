@@ -12,13 +12,14 @@ namespace HeroWarsGame
 {
     public partial class MainMenu : Form
     {
-        //new
         Save save = new Save();
         public MainMenu()
         {
             
             InitializeComponent();
 
+            string PictureBox = save.GetHeroPictureBox();
+            MM_CharPreview.Image = (Image)HeroWarsGame.Properties.Resources.ResourceManager.GetObject(PictureBox);
             MM_CharName.Text = Saves.SetHeroName.ToString();
 
             string charLine = "";
@@ -127,6 +128,11 @@ namespace HeroWarsGame
                 }
 
             }
+        }
+
+        private void MM_CharName_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

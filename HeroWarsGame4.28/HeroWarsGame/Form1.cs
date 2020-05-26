@@ -45,7 +45,7 @@ namespace HeroWarsGame
             // string[]...  * Use and update in battle;-> form1
             //...
             // BEvents.UpdateChar(string[]); -> *Makes a CharLine* -> *Vika Update Save.UpdateCurFile(charLine)* -> Save.UpdateSaved();
-
+            
             InitializeComponent();
 
             foreach (var n in Saves.heroes)
@@ -98,18 +98,27 @@ namespace HeroWarsGame
             ShotSpeed = 12;
             MobShotSpeed = ShotSpeed;
 
+            string PictureBox = mob.Race.ToString() + mob._Class;
+            Mob1.Image = (Image)HeroWarsGame.Properties.Resources.ResourceManager.GetObject(PictureBox);
+
             if (mob._Class == "Gunner")
                 MobShot.BackgroundImage = HeroWarsGame.Properties.Resources.bullet21;
-            else if (mob._Class == "Mage")
-                MobShot.BackgroundImage = HeroWarsGame.Properties.Resources.lightning21;
             else if (mob._Class == "Archer")
                 MobShot.BackgroundImage = HeroWarsGame.Properties.Resources.arrow21;
+            else if (mob._Class == "Mage")
+                MobShot.BackgroundImage = HeroWarsGame.Properties.Resources.lightning21;
+
+            MobInfo.Text = mob.Race.ToString() + " " + mob._Class.ToString();
         }
         private void PushPlayer(int ShotSpeed)
         {
             PlayerHealth.Text = PHealth.ToString();
             GetHeroInfo();
             PlayerShotSpeed = ShotSpeed;
+            
+            Save save = new Save();
+            string PictureBox = save.GetHeroPictureBox() + "_B";
+            Player2.Image = (Image)HeroWarsGame.Properties.Resources.ResourceManager.GetObject(PictureBox);
         }
 
         private void GetHeroInfo()

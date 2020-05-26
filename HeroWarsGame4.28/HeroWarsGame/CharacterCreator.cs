@@ -30,7 +30,7 @@ namespace HeroWarsGame
             try
             {
                 save.RefreshCharNames();
-                if (!CC_NameBox.Text.Any(char.IsDigit) && CC_NameBox.Text != "")
+                if (!CC_NameBox.Text.Any(char.IsDigit) && CC_NameBox.Text != "" && !(CC_NameBox.Text.Length > 18))
                 {
                     bool contains = false;
 
@@ -54,8 +54,17 @@ namespace HeroWarsGame
                 }
                 else
                 {
-                    MessageBox.Show("Invalid name. Please try again!");
-                    throw new Exception("Invalid name!");
+                    if (CC_NameBox.Text.Length > 18)
+                    {
+                        MessageBox.Show("Name is too long!");
+                        throw new Exception("Name is too long!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid name. Please try again!");
+                        throw new Exception("Invalid name!");
+                    }
+                    
                 }
 
                 if (CC_Male.Checked)

@@ -140,7 +140,21 @@ namespace HeroWarsGame
                 names.Close();
             }
         }
+        public string GetHeroPictureBox()
+        {
+            string currentchar = "";
+            string PictureName = "";
+            string GenderLetter = "";
+            using (StreamReader GetCurChar = File.OpenText(@"D:\\CurrentChar.txt"))
+            {
+                currentchar = GetCurChar.ReadLine();
+                string[] NameGet = currentchar.Split(',');
+                GenderLetter = NameGet[1];
+                PictureName =  NameGet[3] + GenderLetter[0] + NameGet[2];
+            }
 
-           
+            return PictureName;
+        }
+       
     }
 }
