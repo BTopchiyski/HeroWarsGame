@@ -371,13 +371,166 @@
             // 
             this.pictureBox1.Image = global::HeroWarsGame.Properties.Resources.Battlefield;
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+<<<<<<< HEAD
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+=======
+<<<<<<< HEAD
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+=======
+>>>>>>> a6adbe631ea82f23d953b229121a222ee13a0798
+>>>>>>> f516a9d449456f980bbdba0693cc6805ce3eda46
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(903, 606);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+            // PlayerHealth
+            // 
+            this.PlayerHealth.AutoSize = true;
+            this.PlayerHealth.Location = new System.Drawing.Point(40, 0);
+            this.PlayerHealth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PlayerHealth.Name = "PlayerHealth";
+            this.PlayerHealth.Size = new System.Drawing.Size(35, 13);
+            this.PlayerHealth.TabIndex = 1;
+            this.PlayerHealth.Text = "label1";
+            // 
+            // MobHealth
+            // 
+            this.MobHealth.AutoSize = true;
+            this.MobHealth.Location = new System.Drawing.Point(631, 16);
+            this.MobHealth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MobHealth.Name = "MobHealth";
+            this.MobHealth.Size = new System.Drawing.Size(35, 13);
+            this.MobHealth.TabIndex = 4;
+            this.MobHealth.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(-2, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Health:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(-2, 24);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Weapon:";
+            // 
+            // charge
+            // 
+            this.charge.AutoSize = true;
+            this.charge.Location = new System.Drawing.Point(51, 24);
+            this.charge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.charge.Name = "charge";
+            this.charge.Size = new System.Drawing.Size(35, 13);
+            this.charge.TabIndex = 7;
+            this.charge.Text = "label3";
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
+            // 
+            // HealPack
+            // 
+            this.HealPack.AutoSize = true;
+            this.HealPack.BackColor = System.Drawing.Color.Transparent;
+            this.HealPack.Location = new System.Drawing.Point(81, 0);
+            this.HealPack.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.HealPack.Name = "HealPack";
+            this.HealPack.Size = new System.Drawing.Size(26, 13);
+            this.HealPack.TabIndex = 9;
+            this.HealPack.Text = "\"1\":";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(137, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "\"2\":";
+            // 
+            // Gold
+            // 
+            this.Gold.AutoSize = true;
+            this.Gold.Location = new System.Drawing.Point(-2, 11);
+            this.Gold.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Gold.Name = "Gold";
+            this.Gold.Size = new System.Drawing.Size(32, 13);
+            this.Gold.TabIndex = 12;
+            this.Gold.Text = "Gold:";
+            // 
+            // GoldAmount
+            // 
+            this.GoldAmount.AutoSize = true;
+            this.GoldAmount.Location = new System.Drawing.Point(34, 11);
+            this.GoldAmount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.GoldAmount.Name = "GoldAmount";
+            this.GoldAmount.Size = new System.Drawing.Size(35, 13);
+            this.GoldAmount.TabIndex = 13;
+            this.GoldAmount.Text = "label4";
+            // 
+            // Shield
+            // 
+            this.Shield.Image = ((System.Drawing.Image)(resources.GetObject("Shield.Image")));
+            this.Shield.Location = new System.Drawing.Point(164, 0);
+            this.Shield.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Shield.Name = "Shield";
+            this.Shield.Size = new System.Drawing.Size(28, 30);
+            this.Shield.TabIndex = 10;
+            this.Shield.TabStop = false;
+            this.Shield.Click += new System.EventHandler(this.Shield_Click);
+            this.Shield.MouseHover += new System.EventHandler(this.Shield_MouseHover);
+            // 
+            // Heal
+            // 
+            this.Heal.BackColor = System.Drawing.Color.Transparent;
+            this.Heal.Image = ((System.Drawing.Image)(resources.GetObject("Heal.Image")));
+            this.Heal.Location = new System.Drawing.Point(108, 0);
+            this.Heal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Heal.Name = "Heal";
+            this.Heal.Size = new System.Drawing.Size(28, 30);
+            this.Heal.TabIndex = 8;
+            this.Heal.TabStop = false;
+            this.Heal.Click += new System.EventHandler(this.Heal_Click);
+            this.Heal.MouseHover += new System.EventHandler(this.Heal_MouseHover);
+            // 
+            // MobInfo
+            // 
+            this.MobInfo.AutoSize = true;
+            this.MobInfo.Location = new System.Drawing.Point(586, 0);
+            this.MobInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MobInfo.Name = "MobInfo";
+            this.MobInfo.Size = new System.Drawing.Size(0, 13);
+            this.MobInfo.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(586, 16);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Health:";
+            // 
+>>>>>>> a6adbe631ea82f23d953b229121a222ee13a0798
+>>>>>>> f516a9d449456f980bbdba0693cc6805ce3eda46
             // Battle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
