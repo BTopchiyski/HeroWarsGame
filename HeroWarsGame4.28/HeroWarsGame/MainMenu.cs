@@ -22,27 +22,7 @@ namespace HeroWarsGame
             MM_CharPreview.Image = (Image)HeroWarsGame.Properties.Resources.ResourceManager.GetObject(PictureBox);
             MM_CharName.Text = Saves.SetHeroName.ToString();
 
-            string charLine = "";
-
-            foreach (var n in Saves.heroes)
-            {
-                if (Saves.SetHeroName.ToString() == n.Name)
-                {
-                    MM_Level.Text = n.Lvl.ToString();
-                    MM_Gold.Text = n.Gold.ToString();
-                    MM_Dmg.Text = n.Dmg.ToString();
-                    MM_Wins.Text = n.Wins.ToString();
-
-                    charLine = n.Name + "," + n.Gender + "," + n._Class + "," + n.Race + "," +
-                        n.Lvl + "," + n.Gold + "," + n.Dmg + "," + n.Health + "," + n.Wins;
-
-                    break;
-                }
-
-            }
-            save.UpdateCurFile(charLine);
-            save.UpdateSaved();
-            
+            UpdateCurInfo();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -64,6 +44,7 @@ namespace HeroWarsGame
         private void button1_Click(object sender, EventArgs e)
         {
             UpdateHeroInfo();
+            UpdateCurInfo();
             save.UpdateSaved();
 
             this.Hide();
@@ -85,7 +66,7 @@ namespace HeroWarsGame
         private void MM_QuitStartMenu_Click(object sender, EventArgs e)
         {
             UpdateHeroInfo();
-            save.UpdateSaved();
+            UpdateCurInfo();
 
             this.Hide();
             StartMenu startMenu = new StartMenu();
@@ -113,7 +94,9 @@ namespace HeroWarsGame
                 MessageBox.Show("Not enough gold!");
             }
             UpdateHeroInfo();
-            save.UpdateSaved();
+            UpdateCurInfo();
+           
+            
         }
         private void UpdateHeroInfo()
         {
@@ -128,6 +111,28 @@ namespace HeroWarsGame
                 }
 
             }
+        }
+        private void UpdateCurInfo()
+        {
+            string charLine = "";
+            foreach (var n in Saves.heroes)
+            {
+                if (Saves.SetHeroName.ToString() == n.Name)
+                {
+                    MM_Level.Text = n.Lvl.ToString();
+                    MM_Gold.Text = n.Gold.ToString();
+                    MM_Dmg.Text = n.Dmg.ToString();
+                    MM_Wins.Text = n.Wins.ToString();
+
+                    charLine = n.Name + "," + n.Gender + "," + n._Class + "," + n.Race + "," +
+                        n.Lvl + "," + n.Gold + "," + n.Dmg + "," + n.Health + "," + n.Wins;
+
+                    break;
+                }
+
+            }
+            save.UpdateCurFile(charLine);
+            save.UpdateSaved();
         }
 
         private void MM_CharName_Click(object sender, EventArgs e)

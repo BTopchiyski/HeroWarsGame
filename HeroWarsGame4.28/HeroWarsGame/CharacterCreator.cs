@@ -35,7 +35,8 @@ namespace HeroWarsGame
                     bool contains = false;
                     if (!File.Exists(@"D:\\Names.txt"))
                     {
-                        File.Create(@"D:\\Names.txt");
+                        FileStream file = new FileStream(@"D:\\Names.txt", FileMode.Create, FileAccess.ReadWrite);
+                        file.Close();
                     }
                     else
                         using (StreamReader readNames = File.OpenText(@"D:\\Names.txt"))
@@ -46,6 +47,7 @@ namespace HeroWarsGame
                                 if (CC_NameBox.Text == line)
                                     contains = true;
                             }
+                            readNames.Close();
                         }
                     if (!contains)
                         Name = CC_NameBox.Text;
