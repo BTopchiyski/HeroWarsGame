@@ -15,10 +15,6 @@ C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.csproj.CoreCompileInputs.cache
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.exe
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.pdb
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> f516a9d449456f980bbdba0693cc6805ce3eda46
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.exe.config
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.exe
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.pdb
@@ -35,8 +31,3 @@ C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\o
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.csproj.GenerateResource.cache
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.exe
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.pdb
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a6adbe631ea82f23d953b229121a222ee13a0798
->>>>>>> f516a9d449456f980bbdba0693cc6805ce3eda46
