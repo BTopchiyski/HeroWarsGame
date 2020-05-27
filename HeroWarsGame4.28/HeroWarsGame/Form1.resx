@@ -120,7 +120,26 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>118, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Shield.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAABGdBTUEAALGPC/xhBQAAAItJREFUSEvt
+        zUEKgDAMRNGeygt5LG/p1kV0oJEYapsELYIt/FXJvHQ86liieaHX+yGWP8LpPbFZxrZ1ChXG8PRYqzCG
+        vODALh98PDDOjfEnD1jBuy30TQxZwDCGPGBtBzUxZAFbG8iEIQlqzHKPzBiSoBdCLgxJ0HOH3BjKR8W/
+        WiEs2sAe6cT6lGgHZe9zUll0HdsAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="Heal.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAABGdBTUEAALGPC/xhBQAAAJBJREFUSEvt
+        zrEOhSAMhWFGnsj3fx1XBxcHtKSYBgoUAujQm3yDSQ//Nc/PLWTcdWzTNcdw8OJucnAjG8HdGWkJdsV2
+        az2NBRrzhsbwo4iL1SQxAGMJGpMIwSQWHhrlPzEJ+pBEEiMfRTCO/3UNvJ3EauCOi3G3HI15GsvpilHT
+        YgAHL+4mBzdto17fxNYw7gbjxbEl/iLXowAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODdhZgNYAuYsAB4VGVpZVlE9OG98JxijpmpRSGRwGk9JQxcXFyMjIztFTCQXDz4lFp+xORfJuw8k
@@ -2125,25 +2144,6 @@
         3OdmVeqNPemrkEb++0TiHjerwhKZ0husCkuEfde4xv24x00Y9Pz0IqUlYsWn9A9SVFJcSxthxI0Mg3QN
         cSOMFEEGlhYnKYoMriheBSmoIF0VKSoo3gQpLPCpNEWKk/gO+S4wkdx0h0ltZTKZXC/L8g0331CntxCv
         IAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>118, 17</value>
-  </metadata>
-  <data name="Shield.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAABGdBTUEAALGPC/xhBQAAAItJREFUSEvt
-        zUEKgDAMRNGeygt5LG/p1kV0oJEYapsELYIt/FXJvHQ86liieaHX+yGWP8LpPbFZxrZ1ChXG8PRYqzCG
-        vODALh98PDDOjfEnD1jBuy30TQxZwDCGPGBtBzUxZAFbG8iEIQlqzHKPzBiSoBdCLgxJ0HOH3BjKR8W/
-        WiEs2sAe6cT6lGgHZe9zUll0HdsAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="Heal.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAABGdBTUEAALGPC/xhBQAAAJBJREFUSEvt
-        zrEOhSAMhWFGnsj3fx1XBxcHtKSYBgoUAujQm3yDSQ//Nc/PLWTcdWzTNcdw8OJucnAjG8HdGWkJdsV2
-        az2NBRrzhsbwo4iL1SQxAGMJGpMIwSQWHhrlPzEJ+pBEEiMfRTCO/3UNvJ3EauCOi3G3HI15GsvpilHT
-        YgAHL+4mBzdto17fxNYw7gbjxbEl/iLXowAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

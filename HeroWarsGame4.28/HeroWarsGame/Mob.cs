@@ -32,15 +32,33 @@ namespace HeroWarsGame
         {
             Random rnd = new Random();
             string[] classlist = new string[3] { "Archer", "Mage", "Gunner" };
-            int selector = rnd.Next(0, 2);
-            return classlist[selector];
+
+            int selector = rnd.Next(1, 12);
+
+            if (selector >= 1 && selector < 5)
+                return classlist[0];
+            else if (selector >= 5 && selector < 9)
+                return classlist[1];
+            else if (selector >= 9 && selector < 12)
+                return classlist[2];
+            return "Archer";
+
         }
         internal static string GetRandomRace()
         {
             Random rnd = new Random();
-            string[] racelist = new string[3] { "Orc", "Troll", "Goblin" };
-            int selector = rnd.Next(0, 2);
-            return racelist[selector];
+            string[] racelist = new string[3] { "Goblin", "Troll", "Orc" };
+
+            int selector = rnd.Next(0, 13);
+
+
+            if (selector >= 1 && selector < 5)
+                return racelist[0];
+            else if (selector >= 5 && selector < 9)
+                return racelist[1];
+            else if (selector >= 9 && selector < 12)
+                return racelist[2];
+            return "Orc";
         }
         internal string _Class
         {
