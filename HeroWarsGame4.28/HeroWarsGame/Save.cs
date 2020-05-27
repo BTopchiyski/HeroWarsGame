@@ -19,17 +19,24 @@ namespace HeroWarsGame
         }
         public void AddNames()
         {
-            using (StreamReader readNames = File.OpenText(@"D:\\HeroWarsSaves.txt"))
+            try
             {
-                while (!readNames.EndOfStream)
+                if (File.Exists(@"D:\\HeroWarsSaves.txt"))
                 {
-                    string line = readNames.ReadLine();
-                    string[] info = line.Split(',');
+                    using (StreamReader readNames = File.OpenText(@"D:\\HeroWarsSaves.txt"))
+                    {
+                        while (!readNames.EndOfStream)
+                        {
+                            string line = readNames.ReadLine();
+                            string[] info = line.Split(',');
 
-                    _heroes.Add(info[0]);
+                            _heroes.Add(info[0]);
+                        }
+                    }
+                    SaveHeroName(_heroes);
                 }
             }
-            SaveHeroName(_heroes);
+            catch { }
 
         }
         public void RefreshCharNames()

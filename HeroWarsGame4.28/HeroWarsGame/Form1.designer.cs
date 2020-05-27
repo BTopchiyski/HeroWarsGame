@@ -31,17 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Battle));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.BigShield = new System.Windows.Forms.PictureBox();
-            this.Player2 = new System.Windows.Forms.PictureBox();
-            this.Mob1 = new System.Windows.Forms.PictureBox();
-            this.MobShot = new System.Windows.Forms.Panel();
-            this.PlayerShot = new System.Windows.Forms.Panel();
-            this.Fire2 = new System.Windows.Forms.PictureBox();
-            this.Fire1 = new System.Windows.Forms.PictureBox();
-            this.Bomb1 = new System.Windows.Forms.PictureBox();
-            this.Bomb2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PlayerHealth = new System.Windows.Forms.Label();
             this.MobHealth = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,11 +41,28 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Gold = new System.Windows.Forms.Label();
             this.GoldAmount = new System.Windows.Forms.Label();
-            this.Shield = new System.Windows.Forms.PictureBox();
-            this.Heal = new System.Windows.Forms.PictureBox();
             this.MobInfo = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.Shield = new System.Windows.Forms.PictureBox();
+            this.Heal = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.DiamondBox = new System.Windows.Forms.PictureBox();
+            this.CoinBox = new System.Windows.Forms.PictureBox();
+            this.BigShield = new System.Windows.Forms.PictureBox();
+            this.Player2 = new System.Windows.Forms.PictureBox();
+            this.Mob1 = new System.Windows.Forms.PictureBox();
+            this.MobShot = new System.Windows.Forms.Panel();
+            this.PlayerShot = new System.Windows.Forms.Panel();
+            this.Fire2 = new System.Windows.Forms.PictureBox();
+            this.Fire1 = new System.Windows.Forms.PictureBox();
+            this.Bomb1 = new System.Windows.Forms.PictureBox();
+            this.Bomb2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Shield)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Heal)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DiamondBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CoinBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BigShield)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Mob1)).BeginInit();
@@ -65,8 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Bomb1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bomb2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Shield)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Heal)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -74,11 +78,142 @@
             this.timer1.Interval = 42;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // PlayerHealth
+            // 
+            this.PlayerHealth.AutoSize = true;
+            this.PlayerHealth.Location = new System.Drawing.Point(53, 0);
+            this.PlayerHealth.Name = "PlayerHealth";
+            this.PlayerHealth.Size = new System.Drawing.Size(46, 17);
+            this.PlayerHealth.TabIndex = 1;
+            this.PlayerHealth.Text = "label1";
+            // 
+            // MobHealth
+            // 
+            this.MobHealth.AutoSize = true;
+            this.MobHealth.Location = new System.Drawing.Point(841, 20);
+            this.MobHealth.Name = "MobHealth";
+            this.MobHealth.Size = new System.Drawing.Size(46, 17);
+            this.MobHealth.TabIndex = 4;
+            this.MobHealth.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(-3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Health:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(-3, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Weapon:";
+            // 
+            // charge
+            // 
+            this.charge.AutoSize = true;
+            this.charge.Location = new System.Drawing.Point(68, 30);
+            this.charge.Name = "charge";
+            this.charge.Size = new System.Drawing.Size(46, 17);
+            this.charge.TabIndex = 7;
+            this.charge.Text = "label3";
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
+            // 
+            // HealPack
+            // 
+            this.HealPack.AutoSize = true;
+            this.HealPack.BackColor = System.Drawing.Color.Transparent;
+            this.HealPack.Location = new System.Drawing.Point(108, 0);
+            this.HealPack.Name = "HealPack";
+            this.HealPack.Size = new System.Drawing.Size(30, 17);
+            this.HealPack.TabIndex = 9;
+            this.HealPack.Text = "\"1\":";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(183, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(30, 17);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "\"2\":";
+            // 
+            // Gold
+            // 
+            this.Gold.AutoSize = true;
+            this.Gold.Location = new System.Drawing.Point(-3, 14);
+            this.Gold.Name = "Gold";
+            this.Gold.Size = new System.Drawing.Size(42, 17);
+            this.Gold.TabIndex = 12;
+            this.Gold.Text = "Gold:";
+            // 
+            // GoldAmount
+            // 
+            this.GoldAmount.AutoSize = true;
+            this.GoldAmount.Location = new System.Drawing.Point(45, 14);
+            this.GoldAmount.Name = "GoldAmount";
+            this.GoldAmount.Size = new System.Drawing.Size(46, 17);
+            this.GoldAmount.TabIndex = 13;
+            this.GoldAmount.Text = "label4";
+            // 
+            // MobInfo
+            // 
+            this.MobInfo.AutoSize = true;
+            this.MobInfo.Location = new System.Drawing.Point(781, 0);
+            this.MobInfo.Name = "MobInfo";
+            this.MobInfo.Size = new System.Drawing.Size(0, 17);
+            this.MobInfo.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(781, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 17);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Health:";
+            // 
+            // Shield
+            // 
+            this.Shield.Image = ((System.Drawing.Image)(resources.GetObject("Shield.Image")));
+            this.Shield.Location = new System.Drawing.Point(219, 0);
+            this.Shield.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Shield.Name = "Shield";
+            this.Shield.Size = new System.Drawing.Size(37, 37);
+            this.Shield.TabIndex = 10;
+            this.Shield.TabStop = false;
+            this.Shield.Click += new System.EventHandler(this.Shield_Click);
+            this.Shield.MouseHover += new System.EventHandler(this.Shield_MouseHover);
+            // 
+            // Heal
+            // 
+            this.Heal.BackColor = System.Drawing.Color.Transparent;
+            this.Heal.Image = ((System.Drawing.Image)(resources.GetObject("Heal.Image")));
+            this.Heal.Location = new System.Drawing.Point(144, 0);
+            this.Heal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Heal.Name = "Heal";
+            this.Heal.Size = new System.Drawing.Size(37, 37);
+            this.Heal.TabIndex = 8;
+            this.Heal.TabStop = false;
+            this.Heal.Click += new System.EventHandler(this.Heal_Click);
+            this.Heal.MouseHover += new System.EventHandler(this.Heal_MouseHover);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.DiamondBox);
+            this.panel1.Controls.Add(this.CoinBox);
             this.panel1.Controls.Add(this.BigShield);
             this.panel1.Controls.Add(this.Player2);
             this.panel1.Controls.Add(this.Mob1);
@@ -95,6 +230,30 @@
             this.panel1.Size = new System.Drawing.Size(904, 606);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // DiamondBox
+            // 
+            this.DiamondBox.BackColor = System.Drawing.Color.Transparent;
+            this.DiamondBox.Image = global::HeroWarsGame.Properties.Resources.diamond;
+            this.DiamondBox.Location = new System.Drawing.Point(11, 502);
+            this.DiamondBox.Name = "DiamondBox";
+            this.DiamondBox.Size = new System.Drawing.Size(43, 43);
+            this.DiamondBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DiamondBox.TabIndex = 16;
+            this.DiamondBox.TabStop = false;
+            this.DiamondBox.Visible = false;
+            // 
+            // CoinBox
+            // 
+            this.CoinBox.BackColor = System.Drawing.Color.Transparent;
+            this.CoinBox.Image = global::HeroWarsGame.Properties.Resources.coin;
+            this.CoinBox.Location = new System.Drawing.Point(12, 446);
+            this.CoinBox.Name = "CoinBox";
+            this.CoinBox.Size = new System.Drawing.Size(33, 33);
+            this.CoinBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CoinBox.TabIndex = 17;
+            this.CoinBox.TabStop = false;
+            this.CoinBox.Visible = false;
             // 
             // BigShield
             // 
@@ -212,141 +371,12 @@
             // 
             this.pictureBox1.Image = global::HeroWarsGame.Properties.Resources.Battlefield;
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(903, 606);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
-            // 
-            // PlayerHealth
-            // 
-            this.PlayerHealth.AutoSize = true;
-            this.PlayerHealth.Location = new System.Drawing.Point(53, 0);
-            this.PlayerHealth.Name = "PlayerHealth";
-            this.PlayerHealth.Size = new System.Drawing.Size(46, 17);
-            this.PlayerHealth.TabIndex = 1;
-            this.PlayerHealth.Text = "label1";
-            // 
-            // MobHealth
-            // 
-            this.MobHealth.AutoSize = true;
-            this.MobHealth.Location = new System.Drawing.Point(841, 20);
-            this.MobHealth.Name = "MobHealth";
-            this.MobHealth.Size = new System.Drawing.Size(46, 17);
-            this.MobHealth.TabIndex = 4;
-            this.MobHealth.Text = "label2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(-3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 17);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Health:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(-3, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 17);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Weapon:";
-            // 
-            // charge
-            // 
-            this.charge.AutoSize = true;
-            this.charge.Location = new System.Drawing.Point(68, 30);
-            this.charge.Name = "charge";
-            this.charge.Size = new System.Drawing.Size(46, 17);
-            this.charge.TabIndex = 7;
-            this.charge.Text = "label3";
-            // 
-            // toolTip1
-            // 
-            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
-            // 
-            // HealPack
-            // 
-            this.HealPack.AutoSize = true;
-            this.HealPack.BackColor = System.Drawing.Color.Transparent;
-            this.HealPack.Location = new System.Drawing.Point(108, 0);
-            this.HealPack.Name = "HealPack";
-            this.HealPack.Size = new System.Drawing.Size(30, 17);
-            this.HealPack.TabIndex = 9;
-            this.HealPack.Text = "\"1\":";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(183, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 17);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "\"2\":";
-            // 
-            // Gold
-            // 
-            this.Gold.AutoSize = true;
-            this.Gold.Location = new System.Drawing.Point(-3, 14);
-            this.Gold.Name = "Gold";
-            this.Gold.Size = new System.Drawing.Size(42, 17);
-            this.Gold.TabIndex = 12;
-            this.Gold.Text = "Gold:";
-            // 
-            // GoldAmount
-            // 
-            this.GoldAmount.AutoSize = true;
-            this.GoldAmount.Location = new System.Drawing.Point(45, 14);
-            this.GoldAmount.Name = "GoldAmount";
-            this.GoldAmount.Size = new System.Drawing.Size(46, 17);
-            this.GoldAmount.TabIndex = 13;
-            this.GoldAmount.Text = "label4";
-            // 
-            // Shield
-            // 
-            this.Shield.Image = ((System.Drawing.Image)(resources.GetObject("Shield.Image")));
-            this.Shield.Location = new System.Drawing.Point(219, 0);
-            this.Shield.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Shield.Name = "Shield";
-            this.Shield.Size = new System.Drawing.Size(37, 37);
-            this.Shield.TabIndex = 10;
-            this.Shield.TabStop = false;
-            this.Shield.Click += new System.EventHandler(this.Shield_Click);
-            this.Shield.MouseHover += new System.EventHandler(this.Shield_MouseHover);
-            // 
-            // Heal
-            // 
-            this.Heal.BackColor = System.Drawing.Color.Transparent;
-            this.Heal.Image = ((System.Drawing.Image)(resources.GetObject("Heal.Image")));
-            this.Heal.Location = new System.Drawing.Point(144, 0);
-            this.Heal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Heal.Name = "Heal";
-            this.Heal.Size = new System.Drawing.Size(37, 37);
-            this.Heal.TabIndex = 8;
-            this.Heal.TabStop = false;
-            this.Heal.Click += new System.EventHandler(this.Heal_Click);
-            this.Heal.MouseHover += new System.EventHandler(this.Heal_MouseHover);
-            // 
-            // MobInfo
-            // 
-            this.MobInfo.AutoSize = true;
-            this.MobInfo.Location = new System.Drawing.Point(782, 0);
-            this.MobInfo.Name = "MobInfo";
-            this.MobInfo.Size = new System.Drawing.Size(0, 17);
-            this.MobInfo.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(782, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 17);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Health:";
             // 
             // Battle
             // 
@@ -376,7 +406,11 @@
             this.Text = "Battle";
             this.Load += new System.EventHandler(this.Battle_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.w);
+            ((System.ComponentModel.ISupportInitialize)(this.Shield)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Heal)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DiamondBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CoinBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BigShield)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Mob1)).EndInit();
@@ -385,8 +419,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Bomb1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bomb2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Shield)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Heal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,6 +452,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label MobInfo;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox DiamondBox;
+        private System.Windows.Forms.PictureBox CoinBox;
     }
 }
 

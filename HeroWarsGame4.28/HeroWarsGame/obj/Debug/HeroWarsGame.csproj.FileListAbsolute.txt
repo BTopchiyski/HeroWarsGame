@@ -1,50 +1,13 @@
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\bin\Debug\HeroWarsGame.exe.config
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\bin\Debug\HeroWarsGame.exe
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\bin\Debug\HeroWarsGame.pdb
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.csprojAssemblyReference.cache
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.Properties.Resources.resources
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.csproj.GenerateResource.cache
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.exe
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.pdb
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.Battle.resources
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.CharacterCreator.resources
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.MainMenu.resources
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.StartMenu.resources
-C:\Users\Crypto\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.Saves.resources
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\bin\Debug\HeroWarsGame.exe.config
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\bin\Debug\HeroWarsGame.exe
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\bin\Debug\HeroWarsGame.pdb
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.csprojAssemblyReference.cache
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.Battle.resources
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.CharacterCreator.resources
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.MainMenu.resources
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.Saves.resources
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.StartMenu.resources
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.Properties.Resources.resources
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.csproj.GenerateResource.cache
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.exe
-C:\Users\Acer\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.pdb
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\bin\Debug\HeroWarsGame.exe.config
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\bin\Debug\HeroWarsGame.exe
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\bin\Debug\HeroWarsGame.pdb
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.csprojAssemblyReference.cache
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.CharacterCreator.resources
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.Battle.resources
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.MainMenu.resources
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.Saves.resources
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.StartMenu.resources
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.Properties.Resources.resources
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.csproj.GenerateResource.cache
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.csproj.CoreCompileInputs.cache
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.exe
-C:\Users\topch\source\repos\HeroWarsGame\HeroWarsGame\obj\Debug\HeroWarsGame.pdb
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.exe.config
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.exe
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.pdb
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.csprojAssemblyReference.cache
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.CharacterCreator.resources
+C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.ClassSpecs.resources
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.Battle.resources
+C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.Instructions.resources
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.MainMenu.resources
+C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.RacePerks.resources
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.Saves.resources
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.StartMenu.resources
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.Properties.Resources.resources
@@ -52,9 +15,9 @@ C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.csproj.CoreCompileInputs.cache
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.exe
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.pdb
-C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.Instructions.resources
-C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.RacePerks.resources
-C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.ClassSpecs.resources
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.exe.config
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.exe
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.pdb
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.csprojAssemblyReference.cache
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.CharacterCreator.resources
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.ClassSpecs.resources
@@ -68,6 +31,3 @@ C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\o
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.csproj.GenerateResource.cache
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.exe
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.pdb
-C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.exe.config
-C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.exe
-C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\HeroWarsGame.pdb

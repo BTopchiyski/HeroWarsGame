@@ -28,6 +28,8 @@ namespace HeroWarsGame
         static bool isCharged = true;
         static bool fire = false;
         static bool bomb = false;
+        static bool diamond = false;
+        static bool coin = false;
         static bool shieldActivated = false;
         static bool usedShield = false;
         static bool usedHeal = false;
@@ -36,8 +38,9 @@ namespace HeroWarsGame
 
         DateTime time1 = DateTime.Now;
         DateTime startTime = DateTime.Now;
+        DateTime timeBonuses = DateTime.Now;
 
-        
+
         public Battle()
         {
             //BattleEvents Bevents = new BattleEvent();
@@ -98,7 +101,7 @@ namespace HeroWarsGame
             ShotSpeed = 12;
             MobShotSpeed = ShotSpeed;
 
-            string PictureBox = mob.Race.ToString() + mob._Class;
+            string PictureBox = mob.Race + mob._Class;
             Mob1.Image = (Image)HeroWarsGame.Properties.Resources.ResourceManager.GetObject(PictureBox);
 
             if (mob._Class == "Gunner")
@@ -108,7 +111,7 @@ namespace HeroWarsGame
             else if (mob._Class == "Mage")
                 MobShot.BackgroundImage = HeroWarsGame.Properties.Resources.lightning21;
 
-            MobInfo.Text = mob.Race.ToString() + " " + mob._Class.ToString();
+            MobInfo.Text = mob.Race + " " + mob._Class;
         }
         private void PushPlayer(int ShotSpeed)
         {
@@ -169,6 +172,7 @@ namespace HeroWarsGame
         private void timer1_Tick(object sender, EventArgs e)
         {
             CallTraps();
+            CallBonuses();
 
             if (MobShot.Left - MobShot.Width / 2 <= Player2.Left + Player2.Width && (MobShot.Top > Player2.Top && MobShot.Top < Player2.Top + Player2.Height))
             {
@@ -238,6 +242,83 @@ namespace HeroWarsGame
             Invalidate();
 
             
+        }
+        private void CallBonuses()
+        {
+            DateTime bonusesTime = DateTime.Now;
+
+            if (Math.Abs(bonusesTime.Second - timeBonuses.Second) > 3)
+            {
+                Random random = new Random();
+                int random1 = random.Next(1, 200);
+                int x = random.Next(0, 100);
+                int y = random.Next(0, panel1.Height);
+
+                if (random1 >= 1 && random1 <= 120)
+                {
+                    diamond = false;
+                    DiamondBox.Visible = false;
+                    coin = false;
+                    CoinBox.Visible = false;
+                    timeBonuses = bonusesTime;
+                }
+                else if (random1 > 120 && random1 <= 170)
+                {
+                    Point point = new Point(x, y);
+                    CoinBox.Location = point;
+                    coin = true;
+                    diamond = false;
+                    DiamondBox.Visible = false;
+                    CoinBox.Visible = true;
+                    timeBonuses = bonusesTime;
+                }
+                else if (random1 > 170 && random1 <= 200)
+                {
+                    Point point = new Point(x, y);
+                    DiamondBox.Location = point;
+                    diamond = true;
+                    DiamondBox.Visible = true;
+                    coin = false;
+                    CoinBox.Visible = false;
+                    timeBonuses = bonusesTime;
+                }
+            }
+            else if (coin)
+            {
+
+                Point upRight = new Point(CoinBox.Location.X + CoinBox.Width, CoinBox.Location.Y);
+                Point downRight = new Point(CoinBox.Location.X + CoinBox.Width, CoinBox.Location.Y + CoinBox.Height);
+                Point downLeft = new Point(CoinBox.Location.X, CoinBox.Location.Y + CoinBox.Height);
+
+                if (PlayerHits(CoinBox.Location) ||
+                    PlayerHits(upRight) ||
+                    PlayerHits(downRight) ||
+                    PlayerHits(downLeft))
+                {
+                    PGold += 3;
+                    coin = false;
+                    CoinBox.Visible = false;
+                    startTime = bonusesTime;
+                }
+            }
+            else if (diamond)
+            {
+
+                Point upRight = new Point(DiamondBox.Location.X + DiamondBox.Width, DiamondBox.Location.Y);
+                Point downRight = new Point(DiamondBox.Location.X + DiamondBox.Width, DiamondBox.Location.Y + DiamondBox.Height);
+                Point downLeft = new Point(DiamondBox.Location.X, DiamondBox.Location.Y + DiamondBox.Height);
+
+                if (PlayerHits(DiamondBox.Location) ||
+                    PlayerHits(upRight) ||
+                    PlayerHits(downRight) ||
+                    PlayerHits(downLeft))
+                {
+                    PGold += 7;
+                    diamond = false;
+                    DiamondBox.Visible = false;
+                    startTime = bonusesTime;
+                }
+            }
         }
         private void CallTraps()
         {
