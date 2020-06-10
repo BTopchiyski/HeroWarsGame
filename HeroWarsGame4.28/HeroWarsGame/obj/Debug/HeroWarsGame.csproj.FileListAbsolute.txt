@@ -31,3 +31,6 @@ C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\o
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.csproj.GenerateResource.cache
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.exe
 C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.pdb
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.LogIn.resources
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.Registration.resources

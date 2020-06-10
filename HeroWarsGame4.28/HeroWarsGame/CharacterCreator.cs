@@ -112,9 +112,12 @@ namespace HeroWarsGame
 
                 Hero player;
 
-                if (race.ToString() == "Human") player = new Human(Name, Gender, _class);
-                else if (race.ToString() == "Elf") player = new Elf(Name, Gender, _class);
-                else player = new Dwarf(Name, Gender, _class);
+                if (race.ToString() == "Human") 
+                    player = new Human(Name, Gender, _class);
+                else if (race.ToString() == "Elf") 
+                    player = new Elf(Name, Gender, _class);
+                else 
+                    player = new Dwarf(Name, Gender, _class);
 
 
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
