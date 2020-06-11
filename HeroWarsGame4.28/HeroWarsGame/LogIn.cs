@@ -14,13 +14,16 @@ namespace HeroWarsGame
     public partial class LogIn : Form
     {
         public Users[] test;
+        public int sizeOfTable = 0;
         public LogIn()
         {
             InitializeComponent();
 
+            var f = File.AppendText(@"D:\\Users.txt");
+            f.Close();
+
             using (StreamReader readNames = File.OpenText(@"D:\\Users.txt"))
             {
-                int sizeOfTable = 0;
                 while (!readNames.EndOfStream)
                 {
                     string line = readNames.ReadLine();
@@ -29,55 +32,6 @@ namespace HeroWarsGame
                 test = new Users[sizeOfTable];
             }
 
-
-            using (StreamReader readNames = File.OpenText(@"D:\\Users.txt"))
-            {
-                int tILL = test.Length;
-                while (!readNames.EndOfStream)
-                {
-                    string line = readNames.ReadLine();
-                    string[] info = line.Split(',');
-
-                    string username = info[0];
-                    string password = info[1];
-
-                    if (test.Any(o => o == null) && test.Any(o => o != null))
-                    {
-                        var bezNulls = test.Skip(tILL).ToArray();
-                        test = bezNulls;
-                        var Idi = test.SkipWhile(o => o.Name == null).Max(o => o.Id);
-
-
-                        var newPeopless = new Users[]
-                        {
-                new Users{ Id = Idi + 1, Name = username, Password = password }
-                        };
-
-                        test = test.Concat(newPeopless).ToArray();
-
-                    }
-                    else if (test.Any(o => o == null))
-                    {
-                        var newPeopless = new Users[]
-                        {
-                new Users{ Id = 1, Name = username, Password = password }
-                        };
-
-                        test = test.Concat(newPeopless).ToArray();
-                    }
-                    else if (test.Any(o => o != null))
-                    {
-                        var Idi = test.Max(o => o.Id);
-
-                        var newPeopless = new Users[]
-                        {
-                new Users{ Id = Idi + 1, Name = username, Password = password }
-                        };
-
-                        test = test.Concat(newPeopless).ToArray();
-                    }
-                }
-            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -87,31 +41,99 @@ namespace HeroWarsGame
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            if (UsernameBox.Text.Length == 0)
-                MessageBox.Show("Enter a username!");
-            else if (test.Any(o => o.Name == UsernameBox.Text))
+            try
             {
-                string pass = "";
-                foreach (var c in test)
+                if (sizeOfTable == 0)
                 {
-                    if (c.Name == UsernameBox.Text)
+                    MessageBox.Show("Invalid username or password!");
+                    throw new Exception();
+                }
+                else
+                {
+                    using (StreamReader readNames = File.OpenText(@"D:\\Users.txt"))
                     {
-                        pass += c.Password;
-                        break;
+                        int tILL = test.Length;
+                        while (!readNames.EndOfStream)
+                        {
+                            string line = readNames.ReadLine();
+                            string[] info = line.Split(',');
+
+                            string username = info[0];
+                            string password = info[1];
+
+                            if (test.Any(o => o == null) && test.Any(o => o != null))
+                            {
+                                var noNulls = test.Skip(tILL).ToArray();
+                                test = noNulls;
+                                var Idi = test.SkipWhile(o => o.Name == null).Max(o => o.Id);
+
+
+                                var newPeopless = new Users[]
+                                {
+                new Users{ Id = Idi + 1, Name = username, Password = password }
+                                };
+
+                                test = test.Concat(newPeopless).ToArray();
+
+                            }
+                            else if (test.Any(o => o == null))
+                            {
+                                var newPeopless = new Users[]
+                                {
+                new Users{ Id = 1, Name = username, Password = password }
+                                };
+
+                                test = test.Concat(newPeopless).ToArray();
+                            }
+                            else if (test.Any(o => o != null))
+                            {
+                                var Idi = test.Max(o => o.Id);
+
+                                var newPeopless = new Users[]
+                                {
+                new Users{ Id = Idi + 1, Name = username, Password = password }
+                                };
+
+                                test = test.Concat(newPeopless).ToArray();
+                            }
+                        }
+                    }
+                    if (sizeOfTable == 1)
+                    {
+                        var noNulls = test.Skip(1).ToArray();
+                        test = noNulls;
+                    }
+                    if (UsernameBox.Text.Length == 0)
+                        MessageBox.Show("Enter a username!");
+                    else if (test.Any(o => o.Name == UsernameBox.Text))
+                    {
+                        string pass = "";
+                        foreach (var c in test)
+                        {
+                            if (c.Name == UsernameBox.Text)
+                            {
+                                pass += c.Password;
+                                break;
+                            }
+                        }
+                        if (pass == PasswordBox.Text)
+                        {
+                            MessageBox.Show("Yes!");
+                        }
+                        else if (!(pass == PasswordBox.Text))
+                        {
+                            MessageBox.Show("No!");
+                        }
+                    }
+                    else if (!test.Any(o => o.Name == UsernameBox.Text))
+                    {
+                        MessageBox.Show("Not a valid username!");
                     }
                 }
-                if (pass == PasswordBox.Text)
-                {
-                    MessageBox.Show("Yes!");
-                }
-                else if (!(pass == PasswordBox.Text))
-                {
-                    MessageBox.Show("No!");
-                }
             }
-            else if (!test.Any(o => o.Name == UsernameBox.Text))
+            catch
             {
-                MessageBox.Show("Not a valid username!");
+
             }
         }
 
