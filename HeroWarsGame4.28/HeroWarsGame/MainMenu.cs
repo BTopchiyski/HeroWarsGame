@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace HeroWarsGame
 {
@@ -18,11 +19,13 @@ namespace HeroWarsGame
             
             InitializeComponent();
 
+
             string PictureBox = save.GetHeroPictureBox();
             MM_CharPreview.Image = (Image)HeroWarsGame.Properties.Resources.ResourceManager.GetObject(PictureBox);
             MM_CharName.Text = Saves.SetHeroName.ToString();
 
             UpdateCurInfo();
+            UpdateUsers();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,6 +37,7 @@ namespace HeroWarsGame
         {
             UpdateHeroInfo();
             save.UpdateSaved();
+            UpdateUsers();
 
             this.Hide();
             Battle battle = new Battle();
@@ -46,6 +50,7 @@ namespace HeroWarsGame
             UpdateHeroInfo();
             UpdateCurInfo();
             save.UpdateSaved();
+            UpdateUsers();
 
             this.Hide();
             Saves saves = new Saves();
@@ -95,8 +100,9 @@ namespace HeroWarsGame
             }
             UpdateHeroInfo();
             UpdateCurInfo();
-           
-            
+            UpdateUsers();
+
+
         }
         private void UpdateHeroInfo()
         {
@@ -133,11 +139,59 @@ namespace HeroWarsGame
             }
             save.UpdateCurFile(charLine);
             save.UpdateSaved();
+            UpdateUsers();
         }
 
         private void MM_CharName_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public static void UpdateUsers()
+        {
+            using (StreamReader f = new StreamReader(@"D:\\HeroWarsSaves.txt"))
+            {
+                foreach (var c in LogIn.users)
+                {
+                    if (c.Name == LogIn.username)
+                    {
+                        c.Heroes = "";
+                    }
+                }
+                while (!f.EndOfStream)
+                {
+                    string line = f.ReadLine();
+
+
+                    foreach (var c in LogIn.users)
+                    {
+                        if (c.Name == LogIn.username)
+                        {
+                            if (c.Heroes.Length > 2)
+                                c.Heroes += "/" + line;
+                            else
+                                c.Heroes += line;
+                        }
+                    }
+                }
+            }
+            using (FileStream file = new FileStream(@"D:\\Users.txt", FileMode.Truncate, FileAccess.Write))
+            {
+                StreamWriter sw = new StreamWriter(file);
+                foreach (var c in LogIn.users)
+                {
+
+                    sw.WriteLine(c.Name + "|" + c.Password + "|" + c.Heroes);
+
+                }
+                sw.Close();
+                sw.Dispose();
+            }
+        }
+
+        private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = (e.CloseReason == CloseReason.UserClosing);
         }
     }
 }

@@ -16,6 +16,8 @@ namespace HeroWarsGame
         public CharacterCreator()
         {
             InitializeComponent();
+
+            
         }
 
         private void CC_NameBox_TextChanged(object sender, EventArgs e)
@@ -30,6 +32,15 @@ namespace HeroWarsGame
             try
             {
                 save.RefreshCharNames();
+                for (int i = 0; i < CC_NameBox.Text.Length; i++)
+                {
+                    if (!((char)CC_NameBox.Text[i] >= 65 && (char)CC_NameBox.Text[i] <= 90) &&
+                        !((char)CC_NameBox.Text[i] >= 97 && (char)CC_NameBox.Text[i] <= 122))
+                    {
+                        MessageBox.Show("Your hero name must not contain numbers or special characters!");
+                            throw new Exception();
+                    }
+                }
                 if (!CC_NameBox.Text.Any(char.IsDigit) && CC_NameBox.Text != "" && !(CC_NameBox.Text.Length > 18))
                 {
                     bool contains = false;
@@ -129,6 +140,7 @@ namespace HeroWarsGame
                     string SaveContents = player.Name + "," + player.Gender + "," + player._Class + "," + player.Race +
                             "," + player.Lvl + "," + player.Gold + "," + player.Dmg + "," + player.Health + "," + player.Wins;
 
+                    
 
                     using (FileStream file = new FileStream(filePath, FileMode.Append, FileAccess.Write))
                     {
@@ -136,7 +148,7 @@ namespace HeroWarsGame
                         sw.WriteLine(SaveContents);
                         sw.Close();
                     }
-                   
+
                     this.Hide();
                     Saves saves = new Saves();
                     saves.ShowDialog();

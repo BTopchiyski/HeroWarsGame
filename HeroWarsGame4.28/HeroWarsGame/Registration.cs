@@ -22,6 +22,16 @@ namespace HeroWarsGame
         {
             try
             {
+                for (int i = 0; i < UsernameBox.Text.Length; i++)
+                {
+                    if (!((char)UsernameBox.Text[i] >= 65 && (char)UsernameBox.Text[i] <= 90) &&
+                        !((char)UsernameBox.Text[i] >= 97 && (char)UsernameBox.Text[i] <= 122))
+                    {
+                        MessageBox.Show("Your username must not contain special characters!");
+                            throw new Exception();
+                    }
+                }
+                
                 if (UsernameBox.Text.Length < 2)
                 {
                     MessageBox.Show("Please choose a longer username!");
@@ -37,23 +47,44 @@ namespace HeroWarsGame
                     MessageBox.Show("Enter a password!");
                     throw new Exception();
                 }
-
-
-                using (FileStream file = new FileStream(@"D:\\Users.txt", FileMode.Append, FileAccess.Write))
+                if (LogIn.users.Length != 0)
+                    foreach (var c in LogIn.users)
+                    {
+                        if (c.Name != null && c.Name == UsernameBox.Text)
+                        {
+                            MessageBox.Show("Username already taken!");
+                            throw new Exception();
+                        }
+                        else
+                        {
+                            using (FileStream file = new FileStream(@"D:\\Users.txt", FileMode.Append, FileAccess.Write))
+                            {
+                                StreamWriter sw = new StreamWriter(file);
+                                sw.WriteLine(UsernameBox.Text + "|" + PasswordBox.Text + "|Test,Male,Mage,Elf,1,0,3,5,0");
+                                sw.Close();
+                                sw.Dispose();
+                            }
+                        }
+                    }
+                else
                 {
-                    StreamWriter sw = new StreamWriter(file);
-                    sw.WriteLine(UsernameBox.Text + "," + PasswordBox.Text);
-                    sw.Close();
+                        using (FileStream file = new FileStream(@"D:\\Users.txt", FileMode.Append, FileAccess.Write))
+                        {
+                            StreamWriter sw = new StreamWriter(file);
+                            sw.WriteLine(UsernameBox.Text + "|" + PasswordBox.Text + "|Test,Male,Mage,Elf,1,0,3,5,0");
+                            sw.Close();
+                            sw.Dispose();
+                        }
                 }
-                this.Hide();
-                LogIn login = new LogIn();
-                login.ShowDialog();
-                this.Close();
             } 
             catch
             {
 
             }
+            this.Hide();
+            LogIn login = new LogIn();
+            login.ShowDialog();
+            this.Close();
         }
 
         private void CancelButton_Click(object sender, EventArgs e)

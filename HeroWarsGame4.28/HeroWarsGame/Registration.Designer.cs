@@ -36,63 +36,86 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Sign_Up = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // UsernameBox
             // 
-            this.UsernameBox.Location = new System.Drawing.Point(132, 12);
+            this.UsernameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameBox.Location = new System.Drawing.Point(372, 208);
+            this.UsernameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UsernameBox.Name = "UsernameBox";
-            this.UsernameBox.Size = new System.Drawing.Size(100, 22);
+            this.UsernameBox.Size = new System.Drawing.Size(139, 22);
             this.UsernameBox.TabIndex = 0;
             // 
             // PasswordBox
             // 
-            this.PasswordBox.Location = new System.Drawing.Point(132, 40);
+            this.PasswordBox.Location = new System.Drawing.Point(372, 247);
+            this.PasswordBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PasswordBox.Name = "PasswordBox";
             this.PasswordBox.PasswordChar = '*';
-            this.PasswordBox.Size = new System.Drawing.Size(100, 22);
+            this.PasswordBox.Size = new System.Drawing.Size(139, 20);
             this.PasswordBox.TabIndex = 1;
             // 
             // RepeatPass
             // 
-            this.RepeatPass.Location = new System.Drawing.Point(132, 68);
+            this.RepeatPass.Location = new System.Drawing.Point(372, 285);
+            this.RepeatPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RepeatPass.Name = "RepeatPass";
             this.RepeatPass.PasswordChar = '*';
-            this.RepeatPass.Size = new System.Drawing.Size(100, 22);
+            this.RepeatPass.Size = new System.Drawing.Size(139, 20);
             this.RepeatPass.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 15);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::HeroWarsGame.Properties.Resources.StartMenu;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Location = new System.Drawing.Point(260, 211);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 17);
+            this.label1.Size = new System.Drawing.Size(90, 18);
             this.label1.TabIndex = 3;
             this.label1.Text = "Username:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 45);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Image = global::HeroWarsGame.Properties.Resources.StartMenu;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Location = new System.Drawing.Point(260, 247);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(88, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "Password:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(-1, 71);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Image = global::HeroWarsGame.Properties.Resources.StartMenu;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label3.Location = new System.Drawing.Point(204, 285);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 17);
+            this.label3.Size = new System.Drawing.Size(146, 18);
             this.label3.TabIndex = 5;
             this.label3.Text = "Repeat Password:";
             // 
             // Sign_Up
             // 
-            this.Sign_Up.Location = new System.Drawing.Point(21, 106);
+            this.Sign_Up.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Sign_Up.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sign_Up.Image = global::HeroWarsGame.Properties.Resources.StartMenu;
+            this.Sign_Up.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Sign_Up.Location = new System.Drawing.Point(425, 334);
+            this.Sign_Up.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Sign_Up.Name = "Sign_Up";
-            this.Sign_Up.Size = new System.Drawing.Size(75, 23);
+            this.Sign_Up.Size = new System.Drawing.Size(83, 28);
             this.Sign_Up.TabIndex = 6;
             this.Sign_Up.Text = "Sign Up";
             this.Sign_Up.UseVisualStyleBackColor = true;
@@ -100,19 +123,34 @@
             // 
             // CancelButton
             // 
-            this.CancelButton.Location = new System.Drawing.Point(157, 106);
+            this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelButton.Image = global::HeroWarsGame.Properties.Resources.StartMenu;
+            this.CancelButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.CancelButton.Location = new System.Drawing.Point(267, 334);
+            this.CancelButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(75, 23);
+            this.CancelButton.Size = new System.Drawing.Size(83, 28);
             this.CancelButton.TabIndex = 7;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::HeroWarsGame.Properties.Resources.StartMenu;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // Registration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(784, 436);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.Sign_Up);
             this.Controls.Add(this.label3);
@@ -121,8 +159,11 @@
             this.Controls.Add(this.RepeatPass);
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.UsernameBox);
+            this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Registration";
             this.Text = "Registration";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,5 +179,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Sign_Up;
         private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

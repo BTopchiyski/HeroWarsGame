@@ -41,9 +41,11 @@
             // SavedCharacterList
             // 
             this.SavedCharacterList.FormattingEnabled = true;
-            this.SavedCharacterList.Location = new System.Drawing.Point(116, 113);
+            this.SavedCharacterList.ItemHeight = 16;
+            this.SavedCharacterList.Location = new System.Drawing.Point(155, 139);
+            this.SavedCharacterList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SavedCharacterList.Name = "SavedCharacterList";
-            this.SavedCharacterList.Size = new System.Drawing.Size(260, 173);
+            this.SavedCharacterList.Size = new System.Drawing.Size(345, 212);
             this.SavedCharacterList.TabIndex = 0;
             this.SavedCharacterList.SelectedIndexChanged += new System.EventHandler(this.SavedCharacterList_SelectedIndexChanged);
             // 
@@ -55,9 +57,10 @@
             this.Saves_Chose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Saves_Chose.Image = ((System.Drawing.Image)(resources.GetObject("Saves_Chose.Image")));
             this.Saves_Chose.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Saves_Chose.Location = new System.Drawing.Point(382, 234);
+            this.Saves_Chose.Location = new System.Drawing.Point(509, 288);
+            this.Saves_Chose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Saves_Chose.Name = "Saves_Chose";
-            this.Saves_Chose.Size = new System.Drawing.Size(75, 23);
+            this.Saves_Chose.Size = new System.Drawing.Size(100, 28);
             this.Saves_Chose.TabIndex = 1;
             this.Saves_Chose.Text = "Choose";
             this.Saves_Chose.UseVisualStyleBackColor = false;
@@ -70,9 +73,10 @@
             this.Saves_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Saves_Delete.Image = ((System.Drawing.Image)(resources.GetObject("Saves_Delete.Image")));
             this.Saves_Delete.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Saves_Delete.Location = new System.Drawing.Point(116, 292);
+            this.Saves_Delete.Location = new System.Drawing.Point(155, 359);
+            this.Saves_Delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Saves_Delete.Name = "Saves_Delete";
-            this.Saves_Delete.Size = new System.Drawing.Size(75, 23);
+            this.Saves_Delete.Size = new System.Drawing.Size(100, 28);
             this.Saves_Delete.TabIndex = 2;
             this.Saves_Delete.Text = "Delete";
             this.Saves_Delete.UseVisualStyleBackColor = false;
@@ -85,9 +89,10 @@
             this.Saves_OK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Saves_OK.Image = ((System.Drawing.Image)(resources.GetObject("Saves_OK.Image")));
             this.Saves_OK.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Saves_OK.Location = new System.Drawing.Point(382, 263);
+            this.Saves_OK.Location = new System.Drawing.Point(509, 324);
+            this.Saves_OK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Saves_OK.Name = "Saves_OK";
-            this.Saves_OK.Size = new System.Drawing.Size(75, 23);
+            this.Saves_OK.Size = new System.Drawing.Size(100, 28);
             this.Saves_OK.TabIndex = 3;
             this.Saves_OK.Text = "OK";
             this.Saves_OK.UseVisualStyleBackColor = false;
@@ -100,9 +105,10 @@
             this.Saves_CreateC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Saves_CreateC.Image = ((System.Drawing.Image)(resources.GetObject("Saves_CreateC.Image")));
             this.Saves_CreateC.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Saves_CreateC.Location = new System.Drawing.Point(264, 292);
+            this.Saves_CreateC.Location = new System.Drawing.Point(352, 359);
+            this.Saves_CreateC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Saves_CreateC.Name = "Saves_CreateC";
-            this.Saves_CreateC.Size = new System.Drawing.Size(112, 23);
+            this.Saves_CreateC.Size = new System.Drawing.Size(149, 28);
             this.Saves_CreateC.TabIndex = 20;
             this.Saves_CreateC.Text = "Create Character";
             this.Saves_CreateC.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -112,7 +118,8 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-6, -9);
+            this.pictureBox1.Location = new System.Drawing.Point(-8, -11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(800, 450);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -121,17 +128,19 @@
             // 
             // Saves
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 436);
+            this.ClientSize = new System.Drawing.Size(1045, 537);
             this.Controls.Add(this.Saves_CreateC);
             this.Controls.Add(this.Saves_OK);
             this.Controls.Add(this.Saves_Delete);
             this.Controls.Add(this.Saves_Chose);
             this.Controls.Add(this.SavedCharacterList);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Saves";
             this.Text = "Saves";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Saves_FormClosing);
             this.Load += new System.EventHandler(this.Saves_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

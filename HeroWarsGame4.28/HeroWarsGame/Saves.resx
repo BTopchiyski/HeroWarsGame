@@ -120,7 +120,7 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Saves_Chose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        R0lGODlhZQBhAPIAAAAAAJ3b7sDs85rb7r7s873s8wAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQB
+        R0lGODlhZQBhAIIAAAAAAJ3b7sDs85rb7r7s873s8wAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQB
         CgAAACwAAAAAZQBhAAAI/wADCBxIsKDBgwgHCljIsKHDhxAXJpxIsaLFiwIjatzIEKPHjyBDGuQoQKTJ
         kygVckzJsmVFkg1dypwZAGZHmjhN2nyYs6fHnQ5b2vRZEChPlkOJqjR6MyVQokyP1tx58KnPqEEzUh1p
         FCfWrxGXbp0JtmxMrRKVcjXLVqzatWzLVo361qJcuFbrTrw7ta3evXH5/p0buPDKq4YTS82puDFEqI4b
@@ -134,7 +134,7 @@
   </data>
   <data name="Saves_Delete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        R0lGODlhZQBhAPIAAAAAAJ3b7sDs85rb7r7s873s8wAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQB
+        R0lGODlhZQBhAIIAAAAAAJ3b7sDs85rb7r7s873s8wAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQB
         CgAAACwAAAAAZQBhAAAI/wADCBxIsKDBgwgHCljIsKHDhxAXJpxIsaLFiwIjatzIEKPHjyBDGuQoQKTJ
         kygVckzJsmVFkg1dypwZAGZHmjhN2nyYs6fHnQ5b2vRZEChPlkOJqjR6MyVQokyP1tx58KnPqEEzUh1p
         FCfWrxGXbp0JtmxMrRKVcjXLVqzatWzLVo361qJcuFbrTrw7ta3evXH5/p0buPDKq4YTS82puDFEqI4b
@@ -148,7 +148,7 @@
   </data>
   <data name="Saves_OK.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        R0lGODlhZQBhAPIAAAAAAJ3b7sDs85rb7r7s873s8wAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQB
+        R0lGODlhZQBhAIIAAAAAAJ3b7sDs85rb7r7s873s8wAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQB
         CgAAACwAAAAAZQBhAAAI/wADCBxIsKDBgwgHCljIsKHDhxAXJpxIsaLFiwIjatzIEKPHjyBDGuQoQKTJ
         kygVckzJsmVFkg1dypwZAGZHmjhN2nyYs6fHnQ5b2vRZEChPlkOJqjR6MyVQokyP1tx58KnPqEEzUh1p
         FCfWrxGXbp0JtmxMrRKVcjXLVqzatWzLVo361qJcuFbrTrw7ta3evXH5/p0buPDKq4YTS82puDFEqI4b
@@ -162,7 +162,7 @@
   </data>
   <data name="Saves_CreateC.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        R0lGODlhZQBhAPIAAAAAAJ3b7sDs85rb7r7s873s8wAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQB
+        R0lGODlhZQBhAIIAAAAAAJ3b7sDs85rb7r7s873s8wAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQB
         CgAAACwAAAAAZQBhAAAI/wADCBxIsKDBgwgHCljIsKHDhxAXJpxIsaLFiwIjatzIEKPHjyBDGuQoQKTJ
         kygVckzJsmVFkg1dypwZAGZHmjhN2nyYs6fHnQ5b2vRZEChPlkOJqjR6MyVQokyP1tx58KnPqEEzUh1p
         FCfWrxGXbp0JtmxMrRKVcjXLVqzatWzLVo361qJcuFbrTrw7ta3evXH5/p0buPDKq4YTS82puDFEqI4b

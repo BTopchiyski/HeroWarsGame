@@ -12,6 +12,6 @@ namespace HeroWarsGame
         public String Name { get; set; }
         public String Password { get; set; }
 
-        public string[] Heroes { get; set; }
+        public string Heroes { get; set; }
     }
 }

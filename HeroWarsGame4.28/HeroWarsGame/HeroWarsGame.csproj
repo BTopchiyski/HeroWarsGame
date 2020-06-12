@@ -354,8 +354,5 @@
   <ItemGroup>
     <None Include="Resources\Users.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Users.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

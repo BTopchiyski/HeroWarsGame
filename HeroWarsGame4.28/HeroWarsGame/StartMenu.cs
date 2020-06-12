@@ -77,7 +77,8 @@ namespace HeroWarsGame
         }
 
         private void StarMenu_Quit_Click(object sender, EventArgs e)
-        {  
+        {
+            File.Delete(@"D:\\HeroWarsSaves.txt");
             save.QuitGame();
             Application.Exit();
         }
