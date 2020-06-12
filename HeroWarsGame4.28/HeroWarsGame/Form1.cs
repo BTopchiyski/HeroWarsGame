@@ -12,8 +12,8 @@ namespace HeroWarsGame
 {
     public partial class Battle : Form
     {
-        static int PlayerShotSpeed; // = Hero.AttackSpeed!
-        static int PlayerDmg; //= Hero.Dmg
+        static int PlayerShotSpeed;
+        static int PlayerDmg;
         static int PLvl;
         static int PGold;
         static int PWins;
@@ -43,12 +43,6 @@ namespace HeroWarsGame
 
         public Battle()
         {
-            //BattleEvents Bevents = new BattleEvent();
-            //BEvents.GetCharArr(); *Returns Arr to use in battle;
-            // string[]...  * Use and update in battle;-> form1
-            //...
-            // BEvents.UpdateChar(string[]); -> *Makes a CharLine* -> *Vika Update Save.UpdateCurFile(charLine)* -> Save.UpdateSaved();
-            
             InitializeComponent();
 
             foreach (var n in Saves.heroes)
@@ -475,7 +469,7 @@ namespace HeroWarsGame
         public void Lose()
         {
             timer1.Stop();
-            MessageBox.Show("You loose!");
+            MessageBox.Show("You lost!");
 
             foreach (var n in Saves.heroes)
             {

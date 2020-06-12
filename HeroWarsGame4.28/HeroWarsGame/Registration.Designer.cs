@@ -35,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Sign_Up = new System.Windows.Forms.Button();
-            this.CancelButton = new System.Windows.Forms.Button();
+            this.CancelB = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,7 +44,7 @@
             // 
             this.UsernameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameBox.Location = new System.Drawing.Point(372, 208);
-            this.UsernameBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UsernameBox.Margin = new System.Windows.Forms.Padding(2);
             this.UsernameBox.Name = "UsernameBox";
             this.UsernameBox.Size = new System.Drawing.Size(139, 22);
             this.UsernameBox.TabIndex = 0;
@@ -52,7 +52,7 @@
             // PasswordBox
             // 
             this.PasswordBox.Location = new System.Drawing.Point(372, 247);
-            this.PasswordBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PasswordBox.Margin = new System.Windows.Forms.Padding(2);
             this.PasswordBox.Name = "PasswordBox";
             this.PasswordBox.PasswordChar = '*';
             this.PasswordBox.Size = new System.Drawing.Size(139, 20);
@@ -61,7 +61,7 @@
             // RepeatPass
             // 
             this.RepeatPass.Location = new System.Drawing.Point(372, 285);
-            this.RepeatPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RepeatPass.Margin = new System.Windows.Forms.Padding(2);
             this.RepeatPass.Name = "RepeatPass";
             this.RepeatPass.PasswordChar = '*';
             this.RepeatPass.Size = new System.Drawing.Size(139, 20);
@@ -113,7 +113,7 @@
             this.Sign_Up.Image = global::HeroWarsGame.Properties.Resources.StartMenu;
             this.Sign_Up.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Sign_Up.Location = new System.Drawing.Point(425, 334);
-            this.Sign_Up.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Sign_Up.Margin = new System.Windows.Forms.Padding(2);
             this.Sign_Up.Name = "Sign_Up";
             this.Sign_Up.Size = new System.Drawing.Size(83, 28);
             this.Sign_Up.TabIndex = 6;
@@ -121,20 +121,20 @@
             this.Sign_Up.UseVisualStyleBackColor = true;
             this.Sign_Up.Click += new System.EventHandler(this.Sign_Up_Click);
             // 
-            // CancelButton
+            // CancelB
             // 
-            this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.Image = global::HeroWarsGame.Properties.Resources.StartMenu;
-            this.CancelButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.CancelButton.Location = new System.Drawing.Point(267, 334);
-            this.CancelButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(83, 28);
-            this.CancelButton.TabIndex = 7;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = true;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            this.CancelB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CancelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelB.Image = global::HeroWarsGame.Properties.Resources.StartMenu;
+            this.CancelB.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.CancelB.Location = new System.Drawing.Point(267, 334);
+            this.CancelB.Margin = new System.Windows.Forms.Padding(2);
+            this.CancelB.Name = "CancelB";
+            this.CancelB.Size = new System.Drawing.Size(83, 28);
+            this.CancelB.TabIndex = 7;
+            this.CancelB.Text = "Cancel";
+            this.CancelB.UseVisualStyleBackColor = true;
+            this.CancelB.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // pictureBox1
             // 
@@ -151,7 +151,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 436);
-            this.Controls.Add(this.CancelButton);
+            this.Controls.Add(this.CancelB);
             this.Controls.Add(this.Sign_Up);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -160,7 +160,7 @@
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.UsernameBox);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Registration";
             this.Text = "Registration";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -178,7 +178,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Sign_Up;
-        private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.Button CancelB;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
