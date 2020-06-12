@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BattleLogs.Designer.cs">
+      <DependentUpon>BattleLogs.cs</DependentUpon>
+    </Compile>
     <Compile Include="CharacterCreator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BattleLogs.resx">
+      <DependentUpon>BattleLogs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CharacterCreator.resx">
       <DependentUpon>CharacterCreator.cs</DependentUpon>
     </EmbeddedResource>

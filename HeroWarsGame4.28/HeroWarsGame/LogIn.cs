@@ -87,10 +87,7 @@ namespace HeroWarsGame
                     MessageBox.Show("Not a valid username!");
                 }
             }
-            catch
-            {
-
-            }
+            catch{}
         }
         public static void CreateHeroes(string str)
         {

@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SM_Instr = new System.Windows.Forms.Button();
+            this.BattleLogs = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,11 +109,26 @@
             this.SM_Instr.UseVisualStyleBackColor = true;
             this.SM_Instr.Click += new System.EventHandler(this.SM_Instr_Click);
             // 
+            // BattleLogs
+            // 
+            this.BattleLogs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BattleLogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BattleLogs.Image = global::HeroWarsGame.Properties.Resources.StartMenu;
+            this.BattleLogs.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BattleLogs.Location = new System.Drawing.Point(28, 355);
+            this.BattleLogs.Name = "BattleLogs";
+            this.BattleLogs.Size = new System.Drawing.Size(101, 31);
+            this.BattleLogs.TabIndex = 14;
+            this.BattleLogs.Text = "BattleLogs";
+            this.BattleLogs.UseVisualStyleBackColor = true;
+            this.BattleLogs.Click += new System.EventHandler(this.BattleLogs_Click);
+            // 
             // StartMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 436);
+            this.Controls.Add(this.BattleLogs);
             this.Controls.Add(this.SM_Instr);
             this.Controls.Add(this.StarMenu_Quit);
             this.Controls.Add(this.StartMenu_CreateCharacter);
@@ -134,5 +150,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button SM_Instr;
+        private System.Windows.Forms.Button BattleLogs;
     }
 }

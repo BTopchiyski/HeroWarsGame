@@ -4,9 +4,12 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Runtime.Serialization;
 
 namespace HeroWarsGame
 {
@@ -25,6 +28,7 @@ namespace HeroWarsGame
         static int MGold;
         static int MDmg;
         static string MRace;
+        static string MClass;
         static bool isCharged = true;
         static bool fire = false;
         static bool bomb = false;
@@ -39,6 +43,8 @@ namespace HeroWarsGame
         DateTime time1 = DateTime.Now;
         DateTime startTime = DateTime.Now;
         DateTime timeBonuses = DateTime.Now;
+
+        
 
 
         public Battle()
@@ -96,6 +102,7 @@ namespace HeroWarsGame
             MobShotSpeed = ShotSpeed;
 
             string PictureBox = mob.Race + mob._Class;
+            MClass = mob._Class;
             Mob1.Image = (Image)HeroWarsGame.Properties.Resources.ResourceManager.GetObject(PictureBox);
 
             if (mob._Class == "Gunner")
@@ -481,12 +488,35 @@ namespace HeroWarsGame
             }
 
             UpdateHeroInfo();
+            bool win = false;
+            LogBattle(win);
 
             this.Hide();
             MainMenu mainMenu = new MainMenu();
             mainMenu.ShowDialog();
             this.Close();
 
+        }
+        public static void LogBattle(bool win)
+        {
+            Lib.Battlelogs newInfo = new Lib.Battlelogs();
+            newInfo.user = LogIn.username;
+            newInfo.mob = MRace + " " + MClass;
+            newInfo.outcome = "";
+
+            if (win)
+                newInfo.outcome = newInfo.user + " vs. " + newInfo.mob + " - " + "Win";
+            else
+                newInfo.outcome = newInfo.user + " vs. " + newInfo.mob + " - " + "Lost";
+
+
+            StartMenu.Logs.Add(newInfo);
+
+             IFormatter binFormatter = new BinaryFormatter();
+            using (Stream fileStream = new FileStream(@"D:\\BattleLogs.db", FileMode.Append, FileAccess.Write))
+            {
+                binFormatter.Serialize(fileStream, StartMenu.Logs);
+            }
         }
         public void Win()
         {
@@ -507,6 +537,8 @@ namespace HeroWarsGame
             }
 
             UpdateHeroInfo();
+            bool win = true;
+            LogBattle(win);
 
             this.Hide();
             MainMenu mainMenu = new MainMenu();

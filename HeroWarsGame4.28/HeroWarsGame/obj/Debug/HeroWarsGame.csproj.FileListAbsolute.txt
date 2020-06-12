@@ -21,3 +21,4 @@ C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\Lib.dll
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\bin\Debug\Lib.pdb
 C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.csproj.CopyComplete
+C:\Users\topch\source\repos\HeroWarsGame4.28\HeroWarsGame\obj\Debug\HeroWarsGame.BattleLogs.resources

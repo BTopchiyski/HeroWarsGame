@@ -270,11 +270,11 @@ namespace HeroWarsGame
                     throw new Exception("No character selected!");
                 else
                     throw new Exception("No character selected!");
-            } 
-            catch
-            {
+           } 
+           catch
+           {
                 MessageBox.Show("No character selected!");
-            }
+           }
         }
 
         private void Saves_Delete_Click(object sender, EventArgs e)
