@@ -99,14 +99,18 @@ namespace HeroWarsGame
             bool isEmpty = true;
 
                 IFormatter binFormatter = new BinaryFormatter();
-                using (var fileStream = new FileStream(@"D:\\BattleLogs.db", FileMode.OpenOrCreate, FileAccess.Read))
+            using (Stream stream = File.Open(@"D:\\BattleLogs.db", FileMode.Open))
+            {
+                if (stream.Length != 0)
                 {
-                    if (fileStream.Length != 0)
-                    {
-                        Logs = (List<Battlelogs>)binFormatter.Deserialize(fileStream);
+                    Logs.Clear();
+                    ((List<Battlelogs>)binFormatter.Deserialize(stream)).ForEach((battlelog)=> {
+                        Logs.Add(battlelog);   
+                    });
+
                     isEmpty = false;
-                    }
                 }
+            }
             if (!isEmpty)
             {
                 BattleLogs battleLogs = new BattleLogs();

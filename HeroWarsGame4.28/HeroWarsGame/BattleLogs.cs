@@ -36,5 +36,10 @@ namespace HeroWarsGame
             StartMenu.Logs.Clear();
 
         }
+
+        private void BattleList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -58,6 +58,7 @@
             this.BattleList.Name = "BattleList";
             this.BattleList.Size = new System.Drawing.Size(307, 388);
             this.BattleList.TabIndex = 1;
+            this.BattleList.SelectedIndexChanged += new System.EventHandler(this.BattleList_SelectedIndexChanged);
             // 
             // pictureBox1
             // 

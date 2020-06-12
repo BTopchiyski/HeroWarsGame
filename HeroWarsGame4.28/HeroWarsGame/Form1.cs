@@ -513,7 +513,7 @@ namespace HeroWarsGame
             StartMenu.Logs.Add(newInfo);
 
              IFormatter binFormatter = new BinaryFormatter();
-            using (Stream fileStream = new FileStream(@"D:\\BattleLogs.db", FileMode.Append, FileAccess.Write))
+            using (Stream fileStream = File.Open(@"D:\\BattleLogs.db", FileMode.Create))
             {
                 binFormatter.Serialize(fileStream, StartMenu.Logs);
             }
