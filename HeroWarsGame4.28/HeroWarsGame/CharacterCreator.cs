@@ -32,6 +32,7 @@ namespace HeroWarsGame
             try
             {
                 save.RefreshCharNames();
+
                 for (int i = 0; i < CC_NameBox.Text.Length; i++)
                 {
                     if (!((char)CC_NameBox.Text[i] >= 65 && (char)CC_NameBox.Text[i] <= 90) &&

@@ -37,6 +37,7 @@ namespace HeroWarsGame
         static bool shieldActivated = false;
         static bool usedShield = false;
         static bool usedHeal = false;
+        static int initialShotSpeed = 12;
         
         Mob mob;
 
@@ -62,7 +63,7 @@ namespace HeroWarsGame
 
             CreateChars create = new CreateChars(PushMob);
             create += PushPlayer;
-            create.Invoke(12);
+            create.Invoke(initialShotSpeed);
 
             CalculateDmg();
 
@@ -98,7 +99,6 @@ namespace HeroWarsGame
             MHealth = mob.Health;
             MGold = mob.Gold;
             MobHealth.Text = MHealth.ToString();
-            ShotSpeed = 12;
             MobShotSpeed = ShotSpeed;
 
             string PictureBox = mob.Race + mob._Class;

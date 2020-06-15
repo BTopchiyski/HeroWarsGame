@@ -9,7 +9,7 @@ namespace HeroWarsGame
  
     public class Mob : Hero
     {
-        public Mob(int Herolevel) : base("Mob","Male", GetRandomClass() , GetRandomRace())
+        public Mob(int Herolevel) : base("Mob","Male", GetRandomClass(), GetRandomRace())
         {
             Random rnd = new Random();
             int symbol = rnd.Next(0, 1);
@@ -28,7 +28,7 @@ namespace HeroWarsGame
                 health = lvl;
         }
 
-        internal static string GetRandomClass()
+        private static string GetRandomClass()
         {
             Random rnd = new Random();
             string[] classlist = new string[3] { "Archer", "Mage", "Gunner" };
@@ -44,7 +44,7 @@ namespace HeroWarsGame
             return "Archer";
 
         }
-        internal static string GetRandomRace()
+        private static string GetRandomRace()
         {
             Random rnd = new Random();
             string[] racelist = new string[3] { "Goblin", "Troll", "Orc" };
@@ -60,11 +60,11 @@ namespace HeroWarsGame
                 return racelist[2];
             return "Orc";
         }
-        internal string _Class
+        private string _Class
         {
             get { return _class; }
         }
-        internal string Race
+        private string Race
         {
             get { return race; }
  
@@ -92,15 +92,18 @@ namespace HeroWarsGame
         public override int AdditionalDmg()
         {
             if (race == "Orc")
-            { if (enemy == "Elf")
+            { 
+                if (enemy == "Elf")
                     additionalDmg = (int)Math.Ceiling(dmg * 20 / 100);
             }
             if (race == "Troll")
-            { if (enemy == "Human")
+            { 
+                if (enemy == "Human")
                     additionalDmg = (int)Math.Ceiling(dmg * 20 / 100);
             }
             if (race == "Goblin")
             {
+                
                 if (enemy == "Dwarf")
                     additionalDmg = (int)Math.Ceiling(dmg * 20 / 100);
             }

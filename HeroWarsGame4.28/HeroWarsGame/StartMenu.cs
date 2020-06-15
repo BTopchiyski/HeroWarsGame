@@ -96,28 +96,40 @@ namespace HeroWarsGame
         }
         private void BattleLogs_Click(object sender, EventArgs e)
         {
-            bool isEmpty = true;
-
-                IFormatter binFormatter = new BinaryFormatter();
-            using (Stream stream = File.Open(@"D:\\BattleLogs.db", FileMode.Open))
+            try
             {
-                if (stream.Length != 0)
-                {
-                    Logs.Clear();
-                    ((List<Battlelogs>)binFormatter.Deserialize(stream)).ForEach((battlelog)=> {
-                        Logs.Add(battlelog);   
-                    });
+                bool isEmpty = true;
+                isEmpty = File.Exists(@"D:\\BattleLogs.db");
 
-                    isEmpty = false;
+                if (isEmpty)
+                {
+                    IFormatter binFormatter = new BinaryFormatter();
+
+                    using (Stream stream = File.Open(@"D:\\BattleLogs.db", FileMode.Open))
+                    {
+                        if (stream.Length != 0)
+                        {
+                            Logs.Clear();
+
+                            ((List<Battlelogs>)binFormatter.Deserialize(stream)).ForEach((battlelog) =>
+                            {
+                                Logs.Add(battlelog);
+                            });
+
+                            isEmpty = false;
+                        }
+                    }
+                    BattleLogs battleLogs = new BattleLogs();
+                    battleLogs.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Log history is empty!");
+                    throw new Exception();
                 }
             }
-            if (!isEmpty)
-            {
-                BattleLogs battleLogs = new BattleLogs();
-                battleLogs.ShowDialog();
-            }
-            else
-            MessageBox.Show("Log history is empty!");
+            catch
+            { }
         }
     }
 }

@@ -178,7 +178,7 @@ namespace HeroWarsGame
         }
         private void NoCharacters()
         {
-            using (FileStream file = new FileStream(@"D:\Users.txt", FileMode.Truncate, FileAccess.Write))
+            using (FileStream file = new FileStream(@"D:\\Users.txt", FileMode.Truncate, FileAccess.Write))
             {
                 StreamWriter sw = new StreamWriter(file);
                 foreach (var c in LogIn.users)
